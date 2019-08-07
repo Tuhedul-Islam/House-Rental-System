@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery infiniteSlide V2 Examples</title>
+<link rel="stylesheet" href="style.css" />
+
+<script src="../jquery/dist/jquery.min.js"></script>
+<script src="infiniteslidev2.js"></script>
+</head>
+
+<body>
+<header>
+	<h1>jQuery infiniteSlide V2 Examples</h1>
+</header>
+
+<div class="module">
+	<h2>Basic</h2>
+	<ul class="Basic">
+		<li><img src="hopeful_of.PNG" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/people" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/tech" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/animals" alt="" /></li>
+		<li><img src="https://placeimg.com/400/300/arch/sepia" alt="" /></li>
+	</ul>
+</div>
+
+<style type="text/css">
+	.Basic {
+		display: none;
+	}
+	.Basic li img {
+		width: 95%;
+		height: 300px;
+	}
+	.Basic img {
+		vertical-align: bottom;
+	}	
+</style>
+
+<script type="text/javascript">
+	$(function(){
+		$('.Basic').infiniteslide();
+	});
+</script>
+
+</body>
+</html>
